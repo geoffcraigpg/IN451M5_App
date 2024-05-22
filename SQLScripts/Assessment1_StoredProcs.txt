@@ -1,0 +1,23 @@
+USE Northwind;
+GO
+
+CREATE PROCEDURE spGetCustomerCount
+AS
+BEGIN
+    SELECT COUNT(*) AS CustomerCount
+    FROM dbo.Customers;
+END;
+GO
+
+USE Northwind;
+GO
+
+CREATE PROCEDURE spListCustomers
+AS
+BEGIN
+    SELECT *
+    FROM dbo.Customers
+    ORDER BY ContactName ASC;
+END;
+GO
+

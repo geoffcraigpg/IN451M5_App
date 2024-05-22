@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace IN451_M2
 {
-    public partial class frmCustomerData : Form
+    public partial class frmEmployeeData : Form
     {
         private IN451_M2.BusinessLayer.BusinessLayer _businessLayer;
         private List<UserRoleModel> _userRoles;
-        public frmCustomerData(IN451_M2.BusinessLayer.BusinessLayer businessLayer, List<UserRoleModel> userRoles)
+        public frmEmployeeData(IN451_M2.BusinessLayer.BusinessLayer businessLayer, List<UserRoleModel> userRoles)
         {
             InitializeComponent();
             _businessLayer = businessLayer;
@@ -16,17 +16,17 @@ namespace IN451_M2
             InitializeData();
         }
 
-        private void frmCustomerData_Load(object sender, EventArgs e)
+        private void frmEmployeeData_Load(object sender, EventArgs e)
         {
 
         }
 
         private void InitializeData()
         {
-            var customers = _businessLayer.GetCustomerData();
-            dataGridCustomerData.DataSource = customers;
-            int numberOfCustomers = _businessLayer.GetCustomerCount();
-            lblNumberCustomersFromBL.Text = numberOfCustomers.ToString();
+            var employees = _businessLayer.GetEmployeeData();
+            dataGridCustomerData.DataSource = employees;
+            int numberOfEmployees = _businessLayer.GetEmployeeCount();
+            lblNumberCustomersFromBL.Text = numberOfEmployees.ToString();
         }
 
         private void btnReturnHome_Click(object sender, EventArgs e)
@@ -34,6 +34,11 @@ namespace IN451_M2
             frmWelcome frmWelcome = new frmWelcome(_userRoles, _businessLayer);
             frmWelcome.Show();
             this.Hide();
+        }
+
+        private void lblCustomerDataTitle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

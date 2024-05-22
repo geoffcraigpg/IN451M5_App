@@ -27,5 +27,34 @@ namespace IN451_M2.BusinessLayer
         {
             return _dataAccess.GetCustomerData();
         }
+
+        public int GetEmployeeCount()
+        {
+            return _dataAccess.GetEmployeeCount();
+        }
+
+        public List<EmployeeModel> GetEmployeeData()
+        {
+            return _dataAccess.GetEmployeeData();
+        }
+
+        public int GetOrderCount()
+        {
+            return _dataAccess.GetOrderCount();
+        }
+
+        public List<OrderModel> GetOrderData()
+        {
+            return _dataAccess.GetOrderData();
+        }
+
+        public bool TestLogin()
+        {
+            return _dataAccess.TestLogin();
+        }
+        public List<UserRoleModel> GetUserRoles()
+        {
+            return _dataAccess.GetUserRoles();
+        }
     }
 }

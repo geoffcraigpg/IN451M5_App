@@ -1,6 +1,6 @@
 ﻿namespace IN451_M2
 {
-    partial class frmCustomerData
+    partial class frmEmployeeData
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             lblCustomerDataTitle = new Label();
-            lblNumberofCustomers = new Label();
+            lblNumberofEmployees = new Label();
             lblNumberCustomersFromBL = new Label();
             lblCustomerInformation = new Label();
             dataGridCustomerData = new DataGridView();
@@ -43,19 +43,20 @@
             lblCustomerDataTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblCustomerDataTitle.Location = new Point(352, 29);
             lblCustomerDataTitle.Name = "lblCustomerDataTitle";
-            lblCustomerDataTitle.Size = new Size(173, 31);
+            lblCustomerDataTitle.Size = new Size(174, 31);
             lblCustomerDataTitle.TabIndex = 0;
-            lblCustomerDataTitle.Text = "Customer Data";
+            lblCustomerDataTitle.Text = "Employee Data";
             lblCustomerDataTitle.TextAlign = ContentAlignment.MiddleCenter;
+            lblCustomerDataTitle.Click += lblCustomerDataTitle_Click;
             // 
-            // lblNumberofCustomers
+            // lblNumberofEmployees
             // 
-            lblNumberofCustomers.AutoSize = true;
-            lblNumberofCustomers.Location = new Point(62, 69);
-            lblNumberofCustomers.Name = "lblNumberofCustomers";
-            lblNumberofCustomers.Size = new Size(154, 20);
-            lblNumberofCustomers.TabIndex = 1;
-            lblNumberofCustomers.Text = "Number of Customers";
+            lblNumberofEmployees.AutoSize = true;
+            lblNumberofEmployees.Location = new Point(62, 69);
+            lblNumberofEmployees.Name = "lblNumberofEmployees";
+            lblNumberofEmployees.Size = new Size(157, 20);
+            lblNumberofEmployees.TabIndex = 1;
+            lblNumberofEmployees.Text = "Number of Employees";
             // 
             // lblNumberCustomersFromBL
             // 
@@ -71,9 +72,9 @@
             lblCustomerInformation.AutoSize = true;
             lblCustomerInformation.Location = new Point(62, 107);
             lblCustomerInformation.Name = "lblCustomerInformation";
-            lblCustomerInformation.Size = new Size(154, 20);
+            lblCustomerInformation.Size = new Size(157, 20);
             lblCustomerInformation.TabIndex = 3;
-            lblCustomerInformation.Text = "Customer Information";
+            lblCustomerInformation.Text = "Employee Information";
             // 
             // dataGridCustomerData
             // 
@@ -98,7 +99,7 @@
             btnReturnHome.UseVisualStyleBackColor = true;
             btnReturnHome.Click += btnReturnHome_Click;
             // 
-            // frmCustomerData
+            // frmEmployeeData
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -107,11 +108,11 @@
             Controls.Add(dataGridCustomerData);
             Controls.Add(lblCustomerInformation);
             Controls.Add(lblNumberCustomersFromBL);
-            Controls.Add(lblNumberofCustomers);
+            Controls.Add(lblNumberofEmployees);
             Controls.Add(lblCustomerDataTitle);
-            Name = "frmCustomerData";
-            Text = "Customer Data";
-            Load += frmCustomerData_Load;
+            Name = "frmEmployeeData";
+            Text = "Employee Data";
+            Load += frmEmployeeData_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridCustomerData).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -120,7 +121,7 @@
         #endregion
 
         private Label lblCustomerDataTitle;
-        private Label lblNumberofCustomers;
+        private Label lblNumberofEmployees;
         private Label lblNumberCustomersFromBL;
         private Label lblCustomerInformation;
         private DataGridView dataGridCustomerData;

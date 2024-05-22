@@ -1,6 +1,6 @@
 ﻿namespace IN451_M2
 {
-    partial class frmCustomerData
+    partial class frmOrderData
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblCustomerDataTitle = new Label();
-            lblNumberofCustomers = new Label();
+            lblOrderDataTitle = new Label();
+            lblNumberofOrders = new Label();
             lblNumberCustomersFromBL = new Label();
-            lblCustomerInformation = new Label();
+            lblOrderInformation = new Label();
             dataGridCustomerData = new DataGridView();
             btnReturnHome = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridCustomerData).BeginInit();
             SuspendLayout();
             // 
-            // lblCustomerDataTitle
+            // lblOrderDataTitle
             // 
-            lblCustomerDataTitle.AutoSize = true;
-            lblCustomerDataTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCustomerDataTitle.Location = new Point(352, 29);
-            lblCustomerDataTitle.Name = "lblCustomerDataTitle";
-            lblCustomerDataTitle.Size = new Size(173, 31);
-            lblCustomerDataTitle.TabIndex = 0;
-            lblCustomerDataTitle.Text = "Customer Data";
-            lblCustomerDataTitle.TextAlign = ContentAlignment.MiddleCenter;
+            lblOrderDataTitle.AutoSize = true;
+            lblOrderDataTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblOrderDataTitle.Location = new Point(352, 29);
+            lblOrderDataTitle.Name = "lblOrderDataTitle";
+            lblOrderDataTitle.Size = new Size(131, 31);
+            lblOrderDataTitle.TabIndex = 0;
+            lblOrderDataTitle.Text = "Order Data";
+            lblOrderDataTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblNumberofCustomers
+            // lblNumberofOrders
             // 
-            lblNumberofCustomers.AutoSize = true;
-            lblNumberofCustomers.Location = new Point(62, 69);
-            lblNumberofCustomers.Name = "lblNumberofCustomers";
-            lblNumberofCustomers.Size = new Size(154, 20);
-            lblNumberofCustomers.TabIndex = 1;
-            lblNumberofCustomers.Text = "Number of Customers";
+            lblNumberofOrders.AutoSize = true;
+            lblNumberofOrders.Location = new Point(62, 69);
+            lblNumberofOrders.Name = "lblNumberofOrders";
+            lblNumberofOrders.Size = new Size(129, 20);
+            lblNumberofOrders.TabIndex = 1;
+            lblNumberofOrders.Text = "Number of Orders";
             // 
             // lblNumberCustomersFromBL
             // 
@@ -66,14 +66,14 @@
             lblNumberCustomersFromBL.TabIndex = 2;
             lblNumberCustomersFromBL.Text = "LoadFromBL";
             // 
-            // lblCustomerInformation
+            // lblOrderInformation
             // 
-            lblCustomerInformation.AutoSize = true;
-            lblCustomerInformation.Location = new Point(62, 107);
-            lblCustomerInformation.Name = "lblCustomerInformation";
-            lblCustomerInformation.Size = new Size(154, 20);
-            lblCustomerInformation.TabIndex = 3;
-            lblCustomerInformation.Text = "Customer Information";
+            lblOrderInformation.AutoSize = true;
+            lblOrderInformation.Location = new Point(62, 107);
+            lblOrderInformation.Name = "lblOrderInformation";
+            lblOrderInformation.Size = new Size(129, 20);
+            lblOrderInformation.TabIndex = 3;
+            lblOrderInformation.Text = "Order Information";
             // 
             // dataGridCustomerData
             // 
@@ -98,20 +98,20 @@
             btnReturnHome.UseVisualStyleBackColor = true;
             btnReturnHome.Click += btnReturnHome_Click;
             // 
-            // frmCustomerData
+            // frmOrderData
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(925, 607);
             Controls.Add(btnReturnHome);
             Controls.Add(dataGridCustomerData);
-            Controls.Add(lblCustomerInformation);
+            Controls.Add(lblOrderInformation);
             Controls.Add(lblNumberCustomersFromBL);
-            Controls.Add(lblNumberofCustomers);
-            Controls.Add(lblCustomerDataTitle);
-            Name = "frmCustomerData";
-            Text = "Customer Data";
-            Load += frmCustomerData_Load;
+            Controls.Add(lblNumberofOrders);
+            Controls.Add(lblOrderDataTitle);
+            Name = "frmOrderData";
+            Text = "Employee Data";
+            Load += frmEmployeeData_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridCustomerData).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -119,10 +119,10 @@
 
         #endregion
 
-        private Label lblCustomerDataTitle;
-        private Label lblNumberofCustomers;
+        private Label lblOrderDataTitle;
+        private Label lblNumberofOrders;
         private Label lblNumberCustomersFromBL;
-        private Label lblCustomerInformation;
+        private Label lblOrderInformation;
         private DataGridView dataGridCustomerData;
         private Button btnReturnHome;
     }
